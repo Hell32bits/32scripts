@@ -85,13 +85,13 @@ localIP = "127.0.0.1"
 localPort = 24454
 remotePort = 24454
 
-# Adicione mais proxies abaixo conforme necessário
-# [[proxies]]
-# name = "outro-servico"
-# type = "tcp"
-# localIP = "127.0.0.1"
-# localPort = 8080
-# remotePort = 8080
+# ===== PROXY 2: SSH (ssh) =====
+ [[proxies]]
+ name = "ssh"
+ type = "ssh"
+ localIP = "127.0.0.1"
+ localPort = 22
+ remotePort = 90
 EOF
 
 echo "✅ Arquivo de configuração criado em: $CONFIG_FILE"
